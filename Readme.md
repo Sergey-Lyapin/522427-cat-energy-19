@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sergey Lyapin](https://up.htmlacademy.ru/adaptive/19/user/522427).
-* Наставник: `Неизвестно`.
+* Наставник: [Захар Овчаров](https://htmlacademy.ru/profile/id906939).
 
 ---
 
