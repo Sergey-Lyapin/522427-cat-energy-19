@@ -26,7 +26,112 @@
         </li>
       </ul>
     </nav>
-  </header>a
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__header">Подбор программы</h1>
+    <b class="page-main__appeal">Заполните анкету и мы подберем программу питания для вашего кота</b>
+    <form action="https://echo.htmlacademy.ru" method="post" class="form">
+      <fieldset class="form__fieldset form__fieldset--underline">
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label">Имя:<sup>*</sup>
+              <input type="text" class="form__input-text" placeholder="Барсик">
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">Вес (кг):<sup>*</sup>
+              <input type="text" class="form__input-text" placeholder="7">
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">Возраст (лет):<sup>*</sup>
+              <input type="text" class="form__input-text" placeholder="7">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__fieldset form__fieldset--underline">
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__item">
+              <input type="radio" name="goal" value="slim" class="form__input-radio">
+              Похудение
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__item">
+              <input type="radio" name="goal" value="pro" class="form__input-radio">
+              Набор массы
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__item">
+              <input type="radio" name="goal" value="advice" class="form__input-radio">
+              Не знаю (нужен ваш совет)
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label">E-mail:<sup>*</sup>
+              <input type="email" class="form__input-text" placeholder="Kuklachev@gmail.com">
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">Телефон:<sup>*</sup>
+              <input type="tel" class="form__input-text" placeholder="8(960)900-60-90">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Комментарий</legend>
+        <textarea class="form__textarea" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend"></legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label">
+              <input class="form__input-checkbox" name="extra" type="checkbox" value="sweetener" checked>
+              Сахарозаменитель
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="form__input-checkbox" name="extra" type="checkbox" value="water">
+              Питьевая вода
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="form__input-checkbox" name="extra" type="checkbox" value="milk">
+              Молоко
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="form__input-checkbox" name="extra" type="checkbox" value="vitamin">
+              Витамины
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" class="form__button button">
+      <small class="form__footnote"><sup>*</sup>&#8212;Обязательные поля</small>
+    </form>
+    <section class="location">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <div class="location__wrapper">
+        <b class="location__invitation">Приглашаем к сотрудничеству дилеров</b>
+        <p class="location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="location__map"></div>
+    </section>
+  </main>
   <footer class="page-footer">
     <img class="page-footer__logo" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
     <ul class="page-footer__social social">
