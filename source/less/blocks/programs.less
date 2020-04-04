@@ -1,0 +1,66 @@
+
+
+.programs__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.programs__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 280px;
+  height: 266px;
+  background-color: #f2f2f2;
+  margin-top: 22px;
+}
+
+.programs__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 26px;
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &--losing-weight::before {
+    content: "";
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("../../img/icon-cat-slim.svg");
+  }
+
+  &--mass-gain::before {
+    content: "";
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../../img/icon-cat-pro.svg");
+  }
+}
+
+.programs__description {
+  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  width: 225px;
+}

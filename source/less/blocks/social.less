@@ -1,0 +1,43 @@
+.social {
+  width: 85%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62px;
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+}
+
+.social__link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vkontakte {
+    background-image: url("../../img/icon-vk.svg");
+    background-size: 50%;
+  }
+
+  &--facebook {
+    background-image: url("../../img/icon-fb.svg");
+    background-size: 25%;
+  }
+
+  &--instagram {
+    background-image: url("../../img/icon-insta.svg");
+    background-size: 50%;
+  }
+}
