@@ -1,0 +1,43 @@
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: #68b738;
+  width: 280px;
+  height: 40px;
+
+  &--programs {
+    text-decoration: none;
+    color: black;
+    width: 240px;
+    margin-left: 20px;
+    border-top: 1px solid #d9d9d9;
+    background-color: transparent;
+    justify-content: flex-start;
+    margin-top: 19px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-left: 14px;
+      background-image: url("../../img/icon-right-arrow-long.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+
+  &--show {
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+  }
+}
