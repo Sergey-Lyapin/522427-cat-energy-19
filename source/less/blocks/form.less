@@ -5,29 +5,95 @@
 }
 
 .form__fieldset {
+  display: flex;
+  flex-direction: column;
   border: none;
   width: 85%;
+  padding: 0;
 
-  &--underline {
+  &--main {
+    margin-top: 39px;
     border-bottom: 1px solid #ededed;
+  }
+
+  &--program {
+    margin-top: 20px;
+    border-bottom: 1px solid #ededed;
+  }
+
+  &--contacts {
+    margin-top: 30px;
+  }
+
+  &--comment {
+    margin-top: 30px;
+  }
+
+  &--extra {
+    margin-top: 30px;
   }
 }
 
 .form__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+
+  &--main {
+    height: 163px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  &--program {
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  &--contacts {
+    margin-top: 30px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--extra {
+    margin-top: 30px;
+    height: 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .form__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .form__input-text {
   font-size: 16px;
   line-height: 18px;
+  height: 40px;
   text-transform: uppercase;
+  margin-left: 11px;
+}
+
+.form__input-radio {
+  margin-right: 16px;
+}
+
+.form__input-checkbox {
+  margin-right: 16px;
 }
 
 .form__legend {
@@ -38,4 +104,20 @@
 .form__footnote {
   font-size: 14px;
   line-height: 16px;
+  margin-top: 23px;
+  margin-bottom: 30px;
+}
+
+.form__textarea {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 18px;
+  width: 85%;
+  height: 120px;
+  padding: 14px;
+  text-transform: uppercase;
+}
+
+.form__button {
+  margin-top: 34px;
 }
