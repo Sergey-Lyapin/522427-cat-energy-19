@@ -1,5 +1,5 @@
 .social {
-  width: 85%;
+  width: 280px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -39,5 +39,12 @@
   &--instagram {
     background-image: url("../../img/icon-insta.svg");
     background-size: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    border-top: none;
+    border-bottom: none;
   }
 }
