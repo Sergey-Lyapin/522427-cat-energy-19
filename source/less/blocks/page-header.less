@@ -1,6 +1,36 @@
 .page-header__logo {
   display: block;
-  margin-top: 11px;
-  margin-left: 20px;
-  padding-bottom: 16px;
+  padding-top: 11px;
+  padding-left: 20px;
+  padding-bottom: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 106px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .page-header__logo {
+    width: 173px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 108px;
+    padding-left: 110px;
+    padding-right: 110px;
+    align-items: flex-end;
+    margin-bottom: -108px;
+  }
+
+  .page-header--catalog {
+    margin-bottom: 0;
+  }
 }

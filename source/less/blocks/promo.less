@@ -29,3 +29,69 @@
 .promo__image {
   margin-top: 28px;
 }
+
+@media (min-width: @tablet-width) {
+  .promo {
+    height: 844px;
+    background: none;
+    padding-top: 58px;
+    padding-left: 120px;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .promo__header {
+    margin: 0;
+    width: 528px;
+    font-size: 60px;
+    line-height: 60px;
+    color: black;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  .promo__appeal {
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+    width: 528px;
+    font-weight: normal;
+    margin-top: 33px;
+  }
+
+  .promo__image {
+    position: absolute;
+    bottom: 310px;
+    left: 300px;
+    z-index: -1;
+  }
+
+  .promo__button {
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    height: 696px;
+    padding-left: 193px;
+    padding-top: 118px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .promo__header {
+    padding-top: 118px;
+  }
+
+  .promo__image {
+    z-index: 2;
+    left: 600px;
+    bottom: 200px;
+  }
+
+  .promo__button {
+    margin-top: 53px;
+  }
+}
