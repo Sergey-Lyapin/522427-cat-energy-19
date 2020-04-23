@@ -45,7 +45,7 @@
 }
 
 .main-nav__item {
-  height: 65px;
+  height: 66px;
   border-top: 1px solid #e6e6e6;
 }
 
@@ -59,6 +59,7 @@
   color: black;
   line-height: 20px;
   font-size: 20px;
+  letter-spacing: 0.5px;
 }
 
 
@@ -80,6 +81,20 @@
   .main-nav__item {
     border-top: none;
     height: 43px;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__item--active {

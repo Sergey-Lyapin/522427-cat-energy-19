@@ -5,8 +5,20 @@
   align-items: center;
 }
 
-.page-footer__logo {
+.page-footer__logo-wrapper {
   height: 94px;
+}
+
+.page-footer__logo {
+  margin-top: 39px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -16,6 +28,18 @@
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .page-footer__logo-wrapper {
+    margin-top: 0;
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+  }
+
+  .page-footer__logo {
+    width: 128px;
+    margin-top: 0;
   }
 }
 
