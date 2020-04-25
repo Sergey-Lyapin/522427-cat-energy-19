@@ -1,13 +1,25 @@
 .copyright {
   height: 78px;
+  width: 100%;
 }
 
 .copyright__link {
+  width: 87.5%;
   height: 100%;
   text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: #68b738;
 }
 
 .copyright__text {
@@ -25,4 +37,24 @@
 .copyright__logo-path {
   width: 27px;
   height: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: 33.3%;
+  }
+
+  .copyright__link {
+    margin: 0;
+    margin-left: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .copyright__logo {
+    width: 40px;
+    margin-right: -6px;
+    margin-left: 16px;
+  }
 }

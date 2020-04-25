@@ -5,13 +5,27 @@
 }
 
 .extra__header {
-  width: 280px;
+  margin-top: 54px;
+  padding-left: 6.25%;
+  width: 100%;
   font-size: 24px;
   line-height: 24px;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 3px;
+    width: calc(100% - 243px - 6.25%);
+    background-color: #68b738;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
 }
 
 .extra__list {
-  width: 280px;
+  margin-top: 33px;
+  width: 87.5%;
   list-style: none;
   padding: 0;
 }
@@ -86,24 +100,45 @@
 
 @media (min-width: @tablet-width) {
   .extra {
-    height: 1015px;
+    height: 1085px;
   }
 
   .extra__header {
-    width: 708px;
-    padding-left: 39px;
+    width: 100%;
+    padding-left: 8.7%;
     font-size: 36px;
     line-height: 36px;
+    margin-top: 68px;
+
+    &::before {
+      content: "";
+      height: 3px;
+      width: calc(8.7% - 39px);
+      background-color: #68b738;
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: calc(100% - 375px - 8.7%);
+      background-color: #68b738;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
   }
 
   .extra__list {
-    margin-top: 75px;
-    width: 708px;
+    margin-top: 79px;
+    width: 92%;
     border-bottom: 1px solid #cdcdcd;
   }
 
   .extra__product {
-    height: 140px;
+    height: 139px;
     border: 1px solid #cdcdcd;
     border-bottom: none;
     padding-left: 36px;
@@ -117,7 +152,7 @@
   .extra__name {
     width: 161px;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 26px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -131,10 +166,15 @@
   }
 
   .extra__price {
-    margin-left: 62px;
+    margin-left: 50px;
+
+    &--water {
+      margin-left: 60px;
+    }
   }
 
   .extra__order {
+    margin-top: 10px;
     width: 100%;
   }
 
@@ -142,18 +182,18 @@
     flex-direction: row;
     width: 707px;
     height: 200px;
-    margin-top: 69px;
+    margin-top: 68px;
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
 
     &::before {
-      margin-top: 0;
-      margin-left: 91px;
+      margin-top: -10px;
+      margin-left: 88px;
     }
   }
 
   .extra__appeal {
-    margin-top: 0;
-    margin-left: 278px;
+    margin-top: 4px;
+    margin-left: 275px;
     text-align: left;
   }
 }

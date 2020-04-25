@@ -2,35 +2,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 447px;
 }
 
 .explanation__header {
+  width: 87.5%;
   font-size: 36px;
   line-height: 60px;
   margin: 0;
-  text-align: center;
+  margin-top: 19px;
+  text-align: left;
 }
 
 .explanation__list {
-  width: 280px;
+  width: 87.5%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
   padding: 0;
+  margin-top: 18px;
   text-align: center;
 }
 
 .explanation__item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 80px;
+  width: 100%;
 }
 
 .explanation__text {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -48,6 +54,7 @@
       background-repeat: no-repeat;
       background-position: center;
       margin-right: 20px;
+      flex-shrink: 0;
     }
   }
 
@@ -62,6 +69,7 @@
       background-repeat: no-repeat;
       background-position: center;
       margin-right: 20px;
+      flex-shrink: 0;
     }
   }
 
@@ -76,6 +84,7 @@
       background-repeat: no-repeat;
       background-position: center;
       margin-right: 20px;
+      flex-shrink: 0;
     }
   }
 
@@ -90,6 +99,7 @@
       background-repeat: no-repeat;
       background-position: center;
       margin-right: 20px;
+      flex-shrink: 0;
     }
   }
 }
@@ -97,9 +107,9 @@
 @media (min-width: @tablet-width) {
   .explanation {
     height: 780px;
-    padding-top: 50px;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-top: 26px;
+    width: 92%;
+    margin: 0 auto;
   }
 
   .explanation__header {
@@ -111,7 +121,9 @@
   }
 
   .explanation__list {
+    padding: 0;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
@@ -119,7 +131,8 @@
   }
 
   .explanation__item {
-    width: 50%;
+    margin-top: 10px;
+    width: 46%;
     height: 50%;
     justify-content: flex-start;
     align-items: flex-start;
@@ -139,29 +152,12 @@
     font-size: 16px;
     line-height: 24px;
     flex-direction: column;
+    width: 76%;
 
-    &--leaf {
-      &::before {
-        margin-bottom: 37px;
-      }
-    }
-
-    &--liquid {
-      &::before {
-        margin-bottom: 37px;
-      }
-    }
-
-    &--cutlery {
-      &::before {
-        margin-bottom: 37px;
-      }
-    }
-
-    &--clock {
-      &::before {
-        margin-bottom: 37px;
-      }
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
     }
   }
 }

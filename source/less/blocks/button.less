@@ -1,7 +1,7 @@
 .button {
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,44 +12,125 @@
   width: 280px;
   height: 40px;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--programs {
     text-decoration: none;
     color: black;
-    width: 240px;
+    width: 100%;
+    height: 56px;
     border-top: 1px solid #d9d9d9;
     background-color: transparent;
     justify-content: flex-start;
+    align-items: center;
     font-size: 16px;
     line-height: 16px;
+
+    &:hover {
+      background-color: transparent;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 11px;
+        margin-left: 10px;
+        background-image: url("../../img/icon-right-arrow-verylong.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+    }
+
+    &:active {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.3);
+
+      &::after {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 11px;
+        margin-left: 10px;
+        background-image: url("../../img/icon-right-arrow-verylong.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        opacity: 0.3;
+      }
+    }
 
     &::after {
       content: "";
       display: block;
-      width: 30px;
-      height: 30px;
-      margin-left: 14px;
+      width: 33px;
+      height: 11px;
+      margin-left: 10px;
       background-image: url("../../img/icon-right-arrow-long.svg");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
     }
   }
-
 
   &--show {
     background-color: #f2f2f2;
     color: black;
     border: none;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
   .button {
     width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
 
     &--programs {
       border-top: none;
-      font-size: 20px;
+
+      &::after {
+        margin-left: 22px;
+      }
+    }
+
+    &--catalog {
+      height: 40px;
+      width: 249px;
+      font-size: 16px;
+    }
+
+    &--show {
+      height: 40px;
+      width: 249px;
+      font-size: 16px;
       line-height: 20px;
+    }
+
+    &--extra {
+      height: 40px;
+      width: 249px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &--form {
+      width: 283px;
+      height: 52px;
     }
   }
 }
