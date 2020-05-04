@@ -97,19 +97,31 @@
 }
 
 .example__image {
-  width: 100%;
+  width: 320px;
   height: 230px;
 
   &--after {
     display: none;
-    background-image: url("../../img/before-mobile@1x.png");
+    background-image: url("../../img/after-mobile@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/after-mobile@2x.png");
+      background-size: 100%;
+      height: 230px;
+    }
   }
 
   &--before {
     display: block;
     background-image: url("../../img/before-mobile@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/before-mobile@2x.png");
+      background-size: 100%;
+      height: 230px;
+    }
   }
 }
 
@@ -251,12 +263,18 @@
   .example__image {
     width: 50%;
     position: relative;
+    height: 100%;
 
     &--before {
       background-image: url("../../img/before-tablet@1x.png");
       background-repeat: no-repeat;
       background-position: left top;
+      background-size: 200%;
       margin-right: -15px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../../img/before-tablet@2x.png");
+      }
     }
 
     &--after {
@@ -264,6 +282,11 @@
       background-image: url("../../img/after-tablet@1x.png");
       background-repeat: no-repeat;
       background-position: right top;
+      background-size: 200%;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../../img/after-tablet@2x.png");
+      }
     }
   }
 
@@ -405,9 +428,20 @@
     display: flex;
     justify-content: center;
 
+    &--before {
+      background-image: url("../../img/before-desktop@1x.png");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../../img/before-desktop@2x.png");
+      }
+    }
+
     &--after {
-      display: none;
-      background-color: #eaeaea;
+      background-image: url("../../img/after-desktop@1x.png");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../../img/after-desktop@2x.png");
+      }
     }
   }
 
