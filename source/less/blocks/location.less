@@ -7,6 +7,10 @@
   &--gray {
     background-color: #f2f2f2;
   }
+
+  &--form {
+    margin-top: -5px;
+  }
 }
 
 .location__wrapper {
@@ -17,7 +21,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -3px;
   background-color: white;
 
   &--gray {
@@ -45,7 +48,7 @@
   height: 360px;
   background-image: url("../../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center -40px;
+  background-position: center -37px;
   position: relative;
 
   &::before {
@@ -67,6 +70,10 @@
   .location {
     height: 597px;
     display: flex;
+
+    &--form {
+      margin-top: 1px;
+    }
   }
 
   .location__wrapper {
@@ -130,7 +137,23 @@
     padding-right: 77px;
   }
 
+  .location__invitation {
+    margin-top: 6px;
+    margin-left: -1px;
+  }
+
+  .location__text {
+    text-align: left;
+    width: 168px;
+    height: 73px;
+  }
+
   .location__map {
     background-image: url("../../img/bg-map-desktop@1x.png");
+
+    &::before {
+      top: 38%;
+      left: 69.4%;
+    }
   }
 }
