@@ -1,5 +1,7 @@
 .promo {
   height: 480px;
+  width: 320px;
+  margin: 0 auto;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -38,6 +40,7 @@
 @media (min-width: @tablet-width) {
   .promo {
     height: 844px;
+    width: auto;
     background: none;
     padding-top: 35px;
     padding-left: 116px;
@@ -67,8 +70,11 @@
 
   .promo__image {
     position: absolute;
-    bottom: 310px;
-    left: 300px;
+    bottom: 0;
+    left: 29px;
+    width: 709px;
+    height: 609px;
+    margin-top: 0;
     z-index: -1;
   }
 
@@ -81,7 +87,7 @@
 @media (min-width: @desktop-width) {
   .promo {
     height: 696px;
-    padding-left: 193px;
+    padding-left: 13.2%;
     padding-top: 118px;
     background-image: url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -94,16 +100,19 @@
   }
 
   .promo__header {
-    padding-top: 118px;
+    padding-top: 105px;
   }
 
   .promo__image {
     z-index: 2;
-    left: 600px;
-    bottom: 200px;
+    width: 552px;
+    height: 499px;
+    left: 38.9%;
+    top: 142px;
   }
 
   .promo__button {
     margin-top: 53px;
+    margin-left: 0;
   }
 }
